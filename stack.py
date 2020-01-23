@@ -32,7 +32,6 @@ root = Tk()
 root.title("Stack")
 root.geometry("400x400")
 Label(root, text="STACK").pack(side="top")
-
 ta = Text(root, width=20, height=10)
 ta.pack(side="top")
 ta.insert(END, "STACK IS HERE")
@@ -49,9 +48,7 @@ entry.pack(side="left")
 pop = Button(frame, text="POP")
 pop.pack(side="left")
 pop.bind("<Button>", popItem)
-
 status = Label(root, text="Stack empty")
 status.pack(side="top")
-
 
 root.mainloop()
